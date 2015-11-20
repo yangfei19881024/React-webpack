@@ -6,6 +6,6 @@ import CommentBox from './comment/commentBox.js';
 require("../scss/index.scss");
 
 ReactDOM.render(
-  <CommentBox/>,
+  <CommentBox url="app/comments.json"/>,
   document.getElementById("box")
 );
