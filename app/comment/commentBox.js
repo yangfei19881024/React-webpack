@@ -9,7 +9,9 @@ class CommentBox extends React.Component{
   constructor(props){
     super(props);
     this.state = {data:[]};
-
+    this.getComments();
+  }
+  getComments(){
     $.ajax({
       url:this.props.url,
       dataType:"json",
