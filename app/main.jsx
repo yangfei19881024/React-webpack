@@ -1,10 +1,7 @@
-import React ,{Component} from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import routeConfig from "./config/route.js";
 
-import CommentBox from './comment/commentBox.js';
-import { Router ,Route ,Link ,IndexRoute ,Redirect } from 'react-router';
-import routeConfig from "./config/route";
-
-ReactDOM.render((
-  <Router routes={routeConfig} />
-), document.getElementById('box'));
+render((
+  routeConfig
+), document.getElementById('example'));

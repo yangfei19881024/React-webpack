@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router';
+import {Link,IndexLink} from 'react-router';
 
 class Home extends React.Component {
   constructor(props) {
@@ -7,11 +7,14 @@ class Home extends React.Component {
   }
 
   render() {
+    const id = 2;
+    const name = "yagnfei";
+    const Active = {color:'red'}
     return (
       <div>
-        <Link to="/">首页</Link>
+        <IndexLink to="/" activeStyle={Active}>首页1</IndexLink>
         <Link to="/tv">电视</Link>
-        <Link to="/show/1" query={{name:'tom',age:12}} >电视列表</Link>
+        <Link to={`/show/${id}/${name}`} query={{name:'tom',age:12}} >电视列表</Link>
       </div>
     );
   }

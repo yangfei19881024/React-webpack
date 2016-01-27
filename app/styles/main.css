@@ -1,0 +1,20 @@
+.button{
+  border:1px solid #2db7f5;;
+  padding:5px;
+  border-radius: 5px;
+  color:#FFF;
+  background: #2db7f5;
+  margin-right: 5px;
+}
+.primary-button{
+  composes:button;
+  padding:20px;
+}
+.success-button{
+  composes:button;
+  padding:20px;
+  background: red;
+}
+.buttongroup{
+  border: 1px solid #CCC;
+}

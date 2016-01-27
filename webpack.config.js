@@ -19,8 +19,8 @@ module.exports = {
         loader: 'babel-loader?presets[]=es2015&presets[]=react',
       },
       {
-        test: /\.s[a|c]ss$/,
-        loader: 'style-loader!css-loader!sass-loader' //
+        test: /\.css$/,
+        loader: 'style-loader!css-loader?modules&localIdentName=[name]__[local]-[hash:base64:5]' //
       },
     ]
   }
