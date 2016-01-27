@@ -28,7 +28,7 @@
     </Route>
   </Route>
 </Router>
-绝对路径 链接配置
+相对路径 链接配置
 <Link to="/goods/goods-list">商品列表</Link>
 <Link to="/goods/goods-detail">商品详情</Link>
 ```
